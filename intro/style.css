@@ -27,10 +27,19 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
-
-/* We start writing out flexbox here. The above is just page setup */
 .container {
   display:flex;
-  border:10px solid goldenrod;
-  height:100vh;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* border: 10px solid goldenrod; */
+  /* min-height: 100vh; */
+}
+
+.box {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.box3 {
+  flex-grow: 10;
 }
